@@ -1,42 +1,40 @@
-# Multiplayer shooter in C++ on its own game engine
+## Game Engine
 
 <h4>About:</h4>
 
-Source code of simple shooter on [GameEngine](https://github.com/Anton247/multiplayer_shooting_game)
+The goal is to implement 3D graphics without libraries for working with 3D graphics. The engine is based on the course - computer geometry at the institute
+
+The project was developed for a multiplayer shooting game in C++
+
+For this moment I already implemented:
+- Operations with Point4D, Matrix4x4, Triangles and Mesh.
+- Projections from 3D on 2D plane, movement and rotation of camera and meshes.
+- Advanced smooth animations by using Bézier curves for meshes and camera
+- Physics engine
+- Network system (in work)
 
 <h4>Installation:</h4>
 
-<h4>Playing with a source code:</h4>
-
-1) [Download and install OpenAL library](https://openal.org/downloads/) for SFML sound support (in current version you can't setup this engine without OpenAL)
-
-2) Clone this repository
-
-3) Open project
+1) Download and install OpenAL library for SFML sound support (in current version you can't setup this engine without OpenAL)
    
-   Using [CLion](https://www.jetbrains.com/clion/) with [MinGW (32-bit)](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/7.3.0/threads-posix/dwarf/i686-7.3.0-release-posix-dwarf-rt_v5-rev0.7z/download) compiler: open <b>CMakeList.txt</b> as a project
+    openal: https://openal.org/downloads/
+   
 
-4) Built project and run the game
+2) Install SFML on your computer (<b>The compiler versions have to match 100%</b>):
+   
+    sfml: https://www.sfml-dev.org/download.php
+   
 
+2) Open CLion or Visual Studio
+   
+   CLion: https://www.jetbrains.com/clion/
+   
 
-5) Write <b>ip</b> and <b>port</b> of server in <b>connect.txt</b> file.
+3) Clone this repository
+   
+    rep url: https://github.com/Anton247/game_engine
+   
 
+4) Built project
 
-6) Write <b>port</b> of the server in <b>server.txt</b> file (only for computer where the server will be running).
-
-
-7) Enjoy gaming!
-
-<h4>Control:</h4>
-
-<b>Mouse</b>, <b>Space</b>, <b>A</b>, <b>S</b>, <b>W</b>, <b>D</b> – player control.
-
-<b>SHIFT</b> – slow motion (this ability is not infinite: its bar is next to hp)
-
-<b>E & Q </b> or keys <b> <- -> </b> – change weapon
-
-<b>R</b> – recharge
-
-<b>O</b> – turn OpenGL on/off
-
-<b>Tab</b> – turn debug mode on/off
+    Recommended method: Run Clean, add Release and Debug configurations. And run (Shift+F10)
